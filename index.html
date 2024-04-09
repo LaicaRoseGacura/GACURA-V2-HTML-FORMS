@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <img src="my logo.png" alt="Your Logo" class="Logo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASTEFUL KITCHEN</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+     <header class="index-form-header">
+        <h1>Tasteful Kitchen</h1>
+        <p><em>Want to order? Kindly fill-up this form.</em></p>
+    </header>
+
+    <div id="dropdown">
+        <button class="dropdown-toggle">
+            <span>Menu</span>
+            <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Italian</a></li>
+            <li class="menu-item"><a href="#">Chinese</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Healthy Options</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                    <li class="submenu-item"><a href="#">Vegan</a></li>
+                    <li class="submenu-item"><a href="#">Gluten-Free</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">Mexican</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Specials</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Pasta</a></li>
+                    <li class="submenu-item"><a href="#">Bread</a></li>
+                    <li class="submenu-item"><a href="#">Soup</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+
+
+<script src='script.js'></script>
+
+    <form action="" method="get" class="index-form">
+        <div class="form-row">
+            <label for="full-name">Name</label>       
+            <input id="full-name" name="full-name" type="text"/>     
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email"
+                    name="email"
+                    type="email"
+                    placeholder="iskolar@pup.edu.ph"
+            />
+        </div>
+
+        <div class="form-row">
+            <label for="Age">Age</label>
+            <input id="age" type="number"/>
+        </div>
+        <div>
+
+            <div class="form-row">
+                <label for="Service">Type of Cuisine</label>
+                <select id="Service" name="Cuisines">
+                    <option value="xs">Itakian</option>
+                    <option value="s">Chinese</option>
+                    <option value="s">Mexican</option>
+                </select>
+            </div>
+
+        <div>
+            <fieldset class="legacy-form-row">
+                <legend>Mode of Payment</legend>
+                    <input id="Payment"
+                    name="payment"
+                    type="radio"
+                    value="Cash"
+                    checked
+                    />
+                    <label for="Payment" class="radio-label">
+                    Cash</label>
+            
+                    <input id="Payment 2"
+                    name="Payment 2"
+                    type="radio"
+                    value="Gcash"
+                    />
+                    <label for="Payment 2" class="radio-label">
+                    Gcash</label>
+            </fieldset>
+        </div>
+
+        <div class="form-row">
+            <label for="Service">Dining</label>
+            <select id="Service" name="Dining">
+                <option value="xs">Dine-in</option>
+                <option value="s">Take-out</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="Comments">Comments</label>
+            <textarea id="Comments" name="Comments"></textarea>
+            <div class="instructions">Give us your feedback based on your experience here at our resto.</div>
+        </div>
+
+        <div class="form-row">
+            <button>Cancel</button>
+      </div>
+
+      <div class="form-row">
+          <button>Order Placed</button>
+    </div>
+
+       
+    </form>
+</body>
+</html>
+
